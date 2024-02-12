@@ -1,14 +1,15 @@
 import java.io.*;
+import java.nio.file.FileSystemException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         try {
             inputData();
-        } catch (Exception e){
+        } catch (FileSystemException e){
             System.out.println(e.getMessage());
         }
 
